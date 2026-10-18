@@ -18,14 +18,20 @@ public class ArticuloService {
         this.repositorio = repositorio;
     }
 
+    /**
+     * Devuelve todos los artículos del almacén.
+     *
+     * @return lista de todos los artículos, ordenados por id
+     */
     public List<Articulo> listarTodos() {
-        // TODO (#n de la incidencia): devolver todos los artículos. Pista: repositorio.findAll()
-        throw new UnsupportedOperationException("Pendiente de implementar");
+        return repositorio.findAll();
     }
 
     public Optional<Map<String, Object>> buscarBasico(Integer id) {
-        // TODO (#n de la incidencia): buscar el artículo por id y devolver un mapa con id, nombre y stock.
-        // Si el stock es 0, añadir "mensaje": "Agotado". Si no existe, Optional.empty().
+        // TODO (#n de la incidencia): buscar el artículo por id y devolver un mapa con
+        // id, nombre y stock.
+        // Si el stock es 0, añadir "mensaje": "Agotado". Si no existe,
+        // Optional.empty().
         throw new UnsupportedOperationException("Pendiente de implementar");
     }
 }
