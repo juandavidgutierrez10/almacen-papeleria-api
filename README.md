@@ -131,4 +131,4 @@ src/main/resources/  application*.properties, schema.sql, data.sql
 
 ## Uso de IA
 
-_Declarar aquí qué se ha consultado a una IA (comandos, errores…). Nunca se introducen contraseñas ni claves._
+Se ha utilizado IA como apoyo para consultar comandos, entender errores y redactar documentación técnica. No se han introducido contraseñas ni claves en herramientas de IA.
