@@ -1,0 +1,6 @@
+HTTP/1.1 200 
+Content-Type: application/json
+Content-Length: 449
+Date: Sun, 18 Oct 2026 12:16:33 GMT
+
+[{"id":1,"nombre":"Bolígrafo azul","precio":0.45,"stock":500,"categoria":"papelería"},{"id":2,"nombre":"Cuaderno A4 cuadriculado","precio":2.1,"stock":120,"categoria":"papelería"},{"id":3,"nombre":"Grapadora metálica","precio":8.95,"stock":0,"categoria":"oficina"},{"id":4,"nombre":"Paquete 500 folios A4","precio":4.8,"stock":60,"categoria":"oficina"},{"id":5,"nombre":"Rotulador fluorescente","precio":0.95,"stock":0,"categoria":"papelería"}]
