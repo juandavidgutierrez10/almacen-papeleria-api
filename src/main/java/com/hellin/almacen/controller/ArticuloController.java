@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import java.util.Map;
 
 /**
  * Controlador REST para la gestión de artículos del almacén.
@@ -39,5 +42,18 @@ public class ArticuloController {
         return servicio.listarTodos();
     }
 
-    // TODO (#n de la incidencia): GET /api/articulos/{id}/basico -> datos básicos (200) o 404 si no existe
+    /**
+     * Devuelve los datos básicos de un artículo, incluyendo si está agotado.
+     * Si el artículo no existe, devuelve 404 Not Found.
+     *
+     * @param id identificador del artículo
+     * @return 200 con los datos básicos, o 404 si no existe
+     */
+    @GetMapping("/{id}/basico")
+    public ResponseEntity<Map<String, Object>> buscarBasico(@PathVariable Integer id) {
+        return servicio.buscarBasico(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
 }
