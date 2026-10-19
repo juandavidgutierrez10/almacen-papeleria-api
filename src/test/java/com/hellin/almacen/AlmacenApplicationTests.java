@@ -9,5 +9,3 @@ class AlmacenApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
-}
